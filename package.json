@@ -5,10 +5,13 @@
   "main": "src/app.js",
   "scripts": {
     "start": "node src/app.js",
-    "dev": "nodemon src/app.js",
+    "dev:fe": "npm run dev --prefix frontend",
+    "dev:be": "nodemon src/app.js",
+    "dev": "concurrently \"npm run dev:be\" \"npm run dev:fe\"",
     "test": "jest"
   },
   "dependencies": {
+    "concurrently": "^8.0.0",
     "axios": "^1.9.0",
     "axios-retry": "^4.5.0",
     "cors": "^2.8.5",

@@ -18,7 +18,7 @@ export default function Home() {
     setResult(null);
 
     try {
-      const response = await axios.post('http://localhost:3001/api/lookup', {
+      const response = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/api/lookup`, {
         phoneNumber,
         lookupType
       });
