@@ -79,7 +79,7 @@ export default function Home() {
         />
         <link 
           rel="apple-touch-icon" 
-          href="/images/Blue Icon_ Phone & Magnifying Glass.png"
+          href="/images/Blue_Icon__Phone___Magnifying_Glass-removebg-preview.png"
         />
         <meta name="theme-color" content="#ffffff" />
       </Head>
