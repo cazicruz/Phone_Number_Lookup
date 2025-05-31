@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: {process.env.NEXT_PUBLIC_FRONTEND_URL}/sitemap.xml
+Sitemap: https://phone-number-lookup-unu6.vercel.app/sitemap.xml

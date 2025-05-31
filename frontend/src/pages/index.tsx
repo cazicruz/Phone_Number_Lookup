@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { FaSearch, FaSpinner, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { toast } from 'react-hot-toast';
 import axios from 'axios';
+import Image from 'next/image';
+import Head from 'next/head';
 import RenderObject from "../components/RenderObject";
 import { motion } from 'framer-motion';
 import SEO from '../components/SEO';
@@ -65,6 +67,12 @@ export default function Home() {
 
   return (
     <>
+      <Head>
+        <link 
+          rel="canonical" 
+          href="https://phone-number-lookup-unu6.vercel.app" 
+        />
+      </Head>
       <SEO />
       <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 pt-4">
@@ -202,11 +210,13 @@ export default function Home() {
           >
             <div className="text-center">
               <h2 className="text-3xl font-bold text-gray-900 mb-4"><a href='https://cazicruz.github.io/portfolio/'>About the Creator</a></h2>
-              <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden">
-                <img 
+              <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden relative">
+                <Image 
                   src="/images/DavidOnwuli.png" 
                   alt="David Onwuli" 
-                  className="w-full h-full fit-content"
+                  fill
+                  className="fit-content"
+                  priority
                 />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">David Onwuli .C.</h3>
@@ -230,13 +240,25 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex justify-center space-x-4">
-                <a href="https://github.com/cazicruz" className="text-gray-600 hover:text-gray-900 transition-colors">
+                <a 
+                  href="https://github.com/cazicruz" 
+                  className="text-gray-600 hover:text-gray-900 transition-colors"
+                  aria-label="Visit David Onwuli's GitHub profile"
+                >
                   <FaGithub className="w-6 h-6" />
                 </a>
-                <a href="https://www.linkedin.com/in/david-onwuli-6043b723a/" className="text-gray-600 hover:text-gray-900 transition-colors">
+                <a 
+                  href="https://www.linkedin.com/in/david-onwuli-6043b723a/" 
+                  className="text-gray-600 hover:text-gray-900 transition-colors"
+                  aria-label="Visit David Onwuli's LinkedIn profile"
+                >
                   <FaLinkedin className="w-6 h-6" />
                 </a>
-                <a href="https://twitter.com/OnwuliDavi79772" className="text-gray-600 hover:text-gray-900 transition-colors">
+                <a 
+                  href="https://twitter.com/OnwuliDavi79772" 
+                  className="text-gray-600 hover:text-gray-900 transition-colors"
+                  aria-label="Visit David Onwuli's Twitter profile"
+                >
                   <FaTwitter className="w-6 h-6" />
                 </a>
               </div>
