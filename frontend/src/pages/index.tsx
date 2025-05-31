@@ -75,13 +75,15 @@ export default function Home() {
         <link 
           rel="icon" 
           type="image/png" 
-          href="/images/Blue_Icon__Phone___Magnifying_Glass-removebg-preview.png"
+          href="/images/iconLookup.png"
         />
         <link 
-          rel="apple-touch-icon" 
+          rel="apple-touch-icon" sizes="180x180"
           href="/images/Blue_Icon__Phone___Magnifying_Glass-removebg-preview.png"
         />
         <meta name="theme-color" content="#ffffff" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-title" content="Phone Lookup" />
       </Head>
       <SEO />
       <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
