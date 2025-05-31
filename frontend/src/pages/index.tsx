@@ -214,7 +214,9 @@ export default function Home() {
                 <Image 
                   src="/images/DavidOnwuli.png" 
                   alt="David Onwuli" 
-                  fill
+                  width={500} // original width
+                  height={500} // original height
+                  priority
                   className="fit-content"
                   priority
                 />
