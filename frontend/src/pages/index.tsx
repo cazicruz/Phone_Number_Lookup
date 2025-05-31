@@ -72,6 +72,16 @@ export default function Home() {
           rel="canonical" 
           href="https://phone-number-lookup-unu6.vercel.app" 
         />
+        <link 
+          rel="icon" 
+          type="image/png" 
+          href="/images/Blue_Icon__Phone___Magnifying_Glass-removebg-preview.png"
+        />
+        <link 
+          rel="apple-touch-icon" 
+          href="/images/Blue Icon_ Phone & Magnifying Glass.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
       </Head>
       <SEO />
       <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
@@ -90,6 +100,21 @@ export default function Home() {
           className="py-12 px-4 sm:px-6 lg:px-8"
         >
           <div className="max-w-4xl mx-auto text-center">
+            <motion.div
+              initial={{ scale: 0.9 }}
+              animate={{ scale: 1 }}
+              transition={{ duration: 0.5 }}
+              className="mb-6"
+            >
+              <Image
+                src="/images/Blue_Icon__Phone___Magnifying_Glass-removebg-preview.png"
+                alt="Phone Number Lookup Logo"
+                width={100}
+                height={100}
+                priority
+                className="mx-auto"
+              />
+            </motion.div>
             <motion.h1 
               initial={{ scale: 0.9 }}
               animate={{ scale: 1 }}
@@ -218,7 +243,6 @@ export default function Home() {
                   height={500} // original height
                   priority
                   className="fit-content"
-                  priority
                 />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">David Onwuli .C.</h3>
