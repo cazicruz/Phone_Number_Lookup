@@ -159,7 +159,11 @@ export default function Home() {
           <div className="text-center">
             <h2 className="text-3xl font-bold text-gray-900 mb-4"><a href='https://cazicruz.github.io/portfolio/'>About the Creator</a></h2>
             <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden">
-              <div className="w-full h-full bg-gradient-to-r from-blue-500 to-indigo-500"></div>
+              <img 
+                src="/images/onwuli_david.png" 
+                alt="David Onwuli" 
+                className="w-full h-full fit-content"
+              />
             </div>
             <h3 className="text-xl font-semibold text-gray-900 mb-2">David Onwuli .C.</h3>
             <p className="text-gray-600 mb-4">
