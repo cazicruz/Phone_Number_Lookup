@@ -206,7 +206,7 @@ export default function Home() {
                 <img 
                   src="/images/DavidOnwuli.png" 
                   alt="David Onwuli" 
-                  className="w-full h-full object-cover"
+                  className="w-full h-full fit-content"
                 />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">David Onwuli .C.</h3>
