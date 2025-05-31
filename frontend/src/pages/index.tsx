@@ -160,7 +160,7 @@ export default function Home() {
             <h2 className="text-3xl font-bold text-gray-900 mb-4"><a href='https://cazicruz.github.io/portfolio/'>About the Creator</a></h2>
             <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden">
               <img 
-                src="/images/onwuli_david.png" 
+                src="/images/DavidOnwuli.png" 
                 alt="David Onwuli" 
                 className="w-full h-full fit-content"
               />
